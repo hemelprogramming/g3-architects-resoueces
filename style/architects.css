@@ -205,6 +205,19 @@ main {
 .sponspors-img-container img {
   width: 166.757px;
 }
+/* footer start */
+.footer {
+  max-width: 1440px;
+  margin: 70px auto;
+  border-radius: 8px;
+  background: #fff4e7;
+}
+.footer .footer-content {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
 /* responsive mobaile device*/
 @media screen and (max-width: 576px) {
   header {
@@ -236,12 +249,19 @@ main {
   .facts-card-container {
     gap: 20px;
   }
+  .footer {
+    width: 100%;
+  }
+  .footer .footer-content {
+    padding: 20px;
+    font-size: 1rem;
+  }
 }
 /* responsive tablet device*/
 @media screen and (min-width: 576px) and (max-width: 960px) {
   nav,
   .teams-container,
-  .fewature-content,
+  .feature,
   .sponspors-img-container,
   .facts-card-container {
     flex-direction: column;
@@ -252,5 +272,8 @@ main {
   }
   .facts-card-container {
     gap: 30px;
+  }
+  .footer {
+    width: 100%;
   }
 }
